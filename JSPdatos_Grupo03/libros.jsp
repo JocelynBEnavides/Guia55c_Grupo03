@@ -53,7 +53,7 @@ System.out.println("Error: " + e);
 %>
             <%
 ServletContext context = request.getServletContext();
-String path = context.getRealPath("/data);
+String path = context.getRealPath("/data");
 Connection conexion = getConnection(path);
    if (!conexion.isClosed()){
 out.write("OK");
