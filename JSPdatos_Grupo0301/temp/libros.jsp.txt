@@ -1,0 +1,36 @@
+﻿<%--
+ Document&nbsp;&nbsp; : index
+ Created on : 25-dic-2012, 10:05:15
+ Author&nbsp;&nbsp;&nbsp;&nbsp; : Jtaguaa
+ --%>
+ 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+ <html>
+ <html>
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Actualizar, Eliminar, Crear registros.</title>
+ </head>
+ <body>
+<form action="matto.jsp" method="post" name="Actualizar"></form>
+ <table>
+ <tr>
+ <td>ISBN</td>
+ <input type="text" name="isbn" value="" size="40"/>
+ </tr>
+ <tr>
+ <td>Título</td>
+ <input type="text" name="titulo" value="" size="50"/>
+ </tr>
+ <tr><td> Action </td>
+ <td>
+ <input type="radio" name="Action" value="Actualizar" /> Actualizar
+ <input type="radio" name="Action" value="Eliminar" /> Eliminar
+ <input type="radio" name="Action" value="Crear" checked /> Crear
+ </td>
+ </tr>
+ <input type="SUBMIT" value="Submit" />
+ </tr>
+ </table>
+ </form>
+ </body>

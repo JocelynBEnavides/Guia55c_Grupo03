@@ -1,0 +1,37 @@
+<%@language="vbscript"%>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<link rel="stylesheet" href="estilo.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<BODY>
+<% 
+set conn=Server.CreateObject("ADODB.Connection")
+conn.open "registro","",""
+
+SQLDatos="SELECT * FROM usuario"
+SET Lista = conn.execute(SQLDatos)
+
+Num=0
+While Not (Lista.EOF)
+Response.Write("<br><br><h1>Registro Num.: " & Num + 1) 
+Response.Write("</h1><br>1.-Nombre: " & Lista("Nombre"))
+Response.Write("<br>2.-Edad: " & Lista("Edad"))
+Response.Write("<br>3.-Sexo: ")
+If (Lista("Sexo")="M") Then 
+	Response.Write("Masculino")
+Else
+	Response.Write("Femenino")
+End If
+Response.Write("<br>4.-Genero: " & Lista("genero"))
+Response.Write("<br>5.-Pais: " & Lista("pais"))
+Num = Num + 1
+Lista.MoveNext
+Wend
+
+conn.Close
+%> 
+<p>&nbsp; </P>
+</BODY>
+</HTML>

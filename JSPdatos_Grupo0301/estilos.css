@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*CSS Document
+Autor: Jocelyn Benavides*/
+
+body {
+    background-color: azure;
+}
+
+body H1 {
+    background: #3E2601;
+    padding: 10px;
+    height: 3.5%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: #669FB0 30px;
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+
+table {
+    border-color: #9B8800;
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    padding: 10px;
+}
+
+table td {
+    background: #C9C9AE;
+    color: black;
+    width: 100px;
+}
+
+a {
+    background-color: #9B8800;
+    display: bottom;
+}

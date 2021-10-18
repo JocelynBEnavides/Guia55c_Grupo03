@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*CSS Document
+Autor: Jocelyn Benavides*/
+
+body {
+    /*background-color: #D0D6BD;*/
+    background-image: url("font.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+H1 {
+    text-align: center;
+    color: #2C3238;
+}
+
+table {
+    border-collapse: separate;
+    border: #BDD0D6 5px solid;
+    background-color: #D5E9F0;
+    color: #111506;
+    padding: 25px;
+    opacity: 0.80;
+}
+
+td {
+    border: #BDD0D6 3px solid;
+    border-collapse: separate;
+    font-size: medium;
+}
+
+a {
+    color: #111506;
+}
+
+form {
+    color: #111506;
+}
